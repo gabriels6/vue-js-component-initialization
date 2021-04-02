@@ -8,10 +8,12 @@
     <title><%= htmlWebpackPlugin.options.title %></title>
   </head>
   <body>
-    <noscript>
-      <strong>We're sorry but <%= htmlWebpackPlugin.options.title %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
-    </noscript>
-    <div id="app"></div>
+    <div id="root"></div>
     <!-- built files will be auto injected -->
+    <script type="text/x-template" id="button-x-template">
+      <button @click="click">
+        Click ButtonXTemplate {{ count }} times
+      </button>
+    </script>
   </body>
 </html>

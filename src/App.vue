@@ -1,17 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <ButtonVue></ButtonVue>
+    <Button-String></Button-String>
+    <ButtonXTemplate></ButtonXTemplate>
+    <ButtonInLine inline-template>
+      <button @click="click">
+        Click ButtonInLine{{ count }} times
+      </button>
+    </ButtonInLine>
+    <ButtonRender></ButtonRender>
+    <ButtonJSX></ButtonJSX>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue';
+import ButtonVue from './ButtonVue.vue'; // import component
 
 export default {
   name: 'App',
   components: {
-    HelloWorld,
+    ButtonVue,
   },
 };
 </script>
